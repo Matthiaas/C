@@ -1,7 +1,11 @@
 #include "gpio.h"
 #include <stdlib.h>
 
-
+/*
+* Author: Matthias Bun
+* File: button.h
+* Description: Too Lazy
+*/
 
 typedef struct {
 	int i;

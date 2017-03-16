@@ -1,5 +1,16 @@
 #include "gpio.h"
-#include "rgbled.h"
+#include "button.h"
+#include "led.h"
+
+#define BUTTONGPIO 2
+#define LEDGPIO 3
+
+
+/*
+* Author: Matthias Bun
+* File: main.c
+* Description: Lets the led in GPIO LEDGPIO shine if the button in GPIO BUTTONGPIO is pressed
+*/
 int main()
 {
 
@@ -9,13 +20,20 @@ int main()
 		return -1;
 	}
 
-	INP_GPIO(2);
+	Button *but = initButton(BUTTONGPIO);
+	Led* led = initLed(LEDGPIO);
+		
+	bool isOn = false;
 
 	while (1)
 	{
 		
-		
-		printf("%d", GPIO_READ(2));
+		if (isButtonDown(but)) {
+			switchLed(HIGH);
+		}
+		else {
+			switchLed(LOW);
+		}
 
 
 	}

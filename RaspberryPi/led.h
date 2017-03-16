@@ -1,6 +1,13 @@
 #include "gpio.h"
 #include <stdlib.h>
 
+
+/*
+* Author: Matthias Bun
+* File: led.h
+* Description: Too Lazy
+*/
+
 #ifndef ledh
 #define ledh
 

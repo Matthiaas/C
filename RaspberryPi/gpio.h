@@ -11,6 +11,13 @@
 
 #include <unistd.h>
 
+
+/*
+* Author: Matthias Bun
+* File: gpio.h
+* Description: Too Lazy
+*/
+
 #define HIGH 1
 #define LOW  0
 #define bool int

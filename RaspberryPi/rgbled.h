@@ -4,6 +4,11 @@
 #ifndef rgbledh
 #define rgbledh
 
+/*
+* Author: Matthias Bun
+* File: rgbled.h
+* Description: Too Lazy
+*/
 
 typedef struct {
 	int r, g, b;
